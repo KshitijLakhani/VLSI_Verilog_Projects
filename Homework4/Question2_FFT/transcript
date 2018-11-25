@@ -1,0 +1,53 @@
+# Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
+# OpenFile {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final.v}
+# Loading project HW4_2_FFT
+# Compile of FFT_final_tb.v failed with 1 errors.
+# Compile of FFT_final_tb.v failed with 1 errors.
+# Compile of FFT_final_tb.v was successful.
+# Compile of FFT_final.v failed with 5 errors.
+# Compile of FFT_final.v failed with 4 errors.
+# Compile of FFT_final.v failed with 3 errors.
+# Compile of FFT_final.v failed with 2 errors.
+# Compile of FFT_final.v failed with 1 errors.
+# Compile of FFT_final.v was successful with warnings.
+vsim Question2_FFT.FFT_final_tb
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui K:\Kshitij Data\VerilogProjects\Homework4\Question2_FFT\FFT_final.v 
+# Start time: 20:59:41 on Mar 25,2018
+# Loading Question2_FFT.FFT_final_tb
+# Loading Question2_FFT.FFT_final
+# ** Warning: (vsim-PLI-3691) K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final_tb.v(30): Expected a system task, not a system function '$random'.
+#    Time: 0 ns  Iteration: 0  Instance: /FFT_final_tb File: K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final_tb.v
+add wave -r /*
+run
+# Start ! 
+# Compile of FFT_final_tb.v was successful.
+vsim Question2_FFT.FFT_final_tb
+# vsim 
+# Start time: 21:04:09 on Mar 25,2018
+# Loading Question2_FFT.FFT_final_tb
+# Loading Question2_FFT.FFT_final
+# ** Warning: (vsim-PLI-3691) K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final_tb.v(30): Expected a system task, not a system function '$random'.
+#    Time: 0 ns  Iteration: 0  Instance: /FFT_final_tb File: K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final_tb.v
+add wave -r /*
+run
+# Start ! 
+quit -sim
+# Compile of FFT_final_tb.v was successful.

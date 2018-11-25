@@ -1,0 +1,160 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/Homework1/Question2
+vcarrysave_4is2
+Z0 !s110 1517424851
+!i10b 1
+!s100 b6M=On3hYSfPdDH4:1hDd2
+I8`BP35UBzLQnC:L>LS`YY0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dK:/Kshitij Data/VerilogProjects/Homework1/Question3
+Z3 w1517423940
+Z4 8K:/Kshitij Data/VerilogProjects/Homework1/Question3/answer1_3.v
+Z5 FK:/Kshitij Data/VerilogProjects/Homework1/Question3/answer1_3.v
+L0 71
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1517424851.000000
+Z8 !s107 K:/Kshitij Data/VerilogProjects/Homework1/Question3/answer1_3.v|
+Z9 !s90 -reportprogress|300|-work|FastAdder6input|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/Question3/answer1_3.v|
+!s101 -O0
+!i113 1
+Z10 o-work FastAdder6input -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vFullAdder
+R0
+!i10b 1
+!s100 EfMmH]l]BNTEI<SDzbjfP3
+IdM2Pe>2:4JYzc>W4S`X6M3
+R1
+R2
+R3
+R4
+R5
+L0 82
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@full@adder
+vstage1_3is2
+R0
+!i10b 1
+!s100 <zzi<5Jb41kKG?=z6_`CZ2
+IzTcPJ:CfN6OzHXLK>O9MP0
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vstage2_3is2
+R0
+!i10b 1
+!s100 M?jeAS@bNI04n`b1k9T8f1
+IXio721`nR[c<NTF96NkYB2
+R1
+R2
+R3
+R4
+R5
+L0 16
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vstage3_4is2
+R0
+!i10b 1
+!s100 ;`ln?lzOV`3H`JCSiS`z71
+IVX80VdgE3]e[5]O8h4<Wk0
+R1
+R2
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vTop
+R0
+!i10b 1
+!s100 6>^A>0XjZoPVK:gL2o]Zz2
+ID6lmFddgY5am5BQMFUhAJ2
+R1
+R2
+R3
+R4
+R5
+L0 49
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@top
+vTop_tb
+!s110 1517424852
+!i10b 1
+!s100 hZ:nRMdXGIFbJ>cK9meOg0
+IjAmCSZOJDDFP1^CdaZ;g31
+R1
+R2
+w1517424840
+8K:/Kshitij Data/VerilogProjects/Homework1/Question3/answer1_3_tb.v
+FK:/Kshitij Data/VerilogProjects/Homework1/Question3/answer1_3_tb.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1517424852.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework1/Question3/answer1_3_tb.v|
+!s90 -reportprogress|300|-work|FastAdder6input|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/Question3/answer1_3_tb.v|
+!s101 -O0
+!i113 1
+R10
+n@top_tb

@@ -1,0 +1,160 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/Homework2/Question2
+vbooth2_ppgenerator
+Z0 !s110 1519423731
+!i10b 1
+!s100 Zh1eiAU<bH[WchVS]>Zd72
+Ij^IWQeMAVNnIP>]feN^]50
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dK:/Kshitij Data/VerilogProjects/Homework2/Question3
+Z3 w1519423728
+Z4 8K:/Kshitij Data/VerilogProjects/Homework2/Question3/HW2_3.v
+Z5 FK:/Kshitij Data/VerilogProjects/Homework2/Question3/HW2_3.v
+L0 61
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1519423731.000000
+Z8 !s107 K:/Kshitij Data/VerilogProjects/Homework2/Question3/HW2_3.v|
+Z9 !s90 -reportprogress|300|-work|Question3|-stats=none|K:/Kshitij Data/VerilogProjects/Homework2/Question3/HW2_3.v|
+!s101 -O0
+!i113 1
+Z10 o-work Question3 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vcarrysave_4is2
+R0
+!i10b 1
+!s100 97YSC^0;PRQ:MZd===jNQ1
+IEOSz?h14=OlzHF_aL[h:J3
+R1
+R2
+R3
+R4
+R5
+L0 162
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vcarrysavestage
+R0
+!i10b 1
+!s100 2<MLz?SURl3D7XoD3<IMV0
+IF:DldR4kLO^A3SIX>aB790
+R1
+R2
+R3
+R4
+R5
+L0 33
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vFullAdder
+R0
+!i10b 1
+!s100 eonkB1T73S_ZWFiVnhoM=3
+IoZWAA[z9VMWF:BE:OBY1L1
+R1
+R2
+R3
+R4
+R5
+L0 173
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@full@adder
+vppgen
+R0
+!i10b 1
+!s100 HI]c_nmE>?7i>ZhAT@IlY0
+I>V;EIo7UIV<Mim4IY_n;d0
+R1
+R2
+R3
+R4
+R5
+L0 119
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vTop
+R0
+!i10b 1
+!s100 kD778eWZhUECR`9QofQc50
+IE17HYjoizKZ>zBco;HVc]0
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@top
+vTop_testbench
+R0
+!i10b 1
+!s100 9?ZF]?WJjm84Z8mDVN]ae3
+I<BMAYCa16ie?0iS02724n2
+R1
+R2
+w1519423158
+8K:/Kshitij Data/VerilogProjects/Homework2/Question3/HW2_3_tb.v
+FK:/Kshitij Data/VerilogProjects/Homework2/Question3/HW2_3_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 K:/Kshitij Data/VerilogProjects/Homework2/Question3/HW2_3_tb.v|
+!s90 -reportprogress|300|-work|Question3|-stats=none|K:/Kshitij Data/VerilogProjects/Homework2/Question3/HW2_3_tb.v|
+!s101 -O0
+!i113 1
+R10
+n@top_testbench

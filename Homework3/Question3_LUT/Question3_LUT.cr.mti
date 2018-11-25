@@ -1,0 +1,54 @@
+{K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_interpolation.v} {1 {vlog -work work -stats=none {K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_interpolation.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Homework3_3_LUT_interpolation
+
+Top level modules:
+	Homework3_3_LUT_interpolation
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4.v} {2 {vlog -work Question3_LUT -stats=none {K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Homework3_3_LUT_piby4
+** Warning: K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4.v(52): (vlog-2182) 'real1' might be read before written in always_comb or always @* block.
+
+** Warning: K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4.v(51): (vlog-2182) 'imag1' might be read before written in always_comb or always @* block.
+
+
+Top level modules:
+	Homework3_3_LUT_piby4
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/matlabfilegenerator.v} {1 {vlog -work work -stats=none {K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/matlabfilegenerator.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module matlabgen1
+
+Top level modules:
+	matlabgen1
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT.v} {1 {vlog -work Question3_LUT -stats=none {K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ComplexExponential
+
+Top level modules:
+	ComplexExponential
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4_tb.v} {1 {vlog -work Question3_LUT -stats=none {K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ComplexExponential_piby4_tb
+
+Top level modules:
+	ComplexExponential_piby4_tb
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_tb.v} {1 {vlog -work Question3_LUT -stats=none {K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ComplexExponential_tb
+
+Top level modules:
+	ComplexExponential_tb
+
+} {} {}} {C:/Users/kshit/Desktop/conj3 (1).v} {1 {vlog -work work -stats=none {C:/Users/kshit/Desktop/conj3 (1).v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module conj3
+
+Top level modules:
+	conj3
+
+} {} {}}

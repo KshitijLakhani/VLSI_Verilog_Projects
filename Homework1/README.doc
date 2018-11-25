@@ -1,0 +1,153 @@
+Website Link for HW 1 questions - 
+
+http://web.ece.ucdavis.edu/~bbaas/281/hwk/1/
+
+
+
+Before getting started, you should go through the verilog notes located under Course Readings on the course home page.
+1. [35 pts] Design and write the verilog for a block that adds three 5-bit numbers into a 2's complement output that is sufficiently large to represent all inputs but with no extra bits. Use one stage of 3:2 carry-save adders and one carry-propagate adder (CPA) using a "+" in verilog. The three inputs are as follows:
+o a is in 2's complement 2.3 format
+o b is in 2's complement 4.1 format
+o c is in unsigned 5.0 format
+a) [2 pts] How many bits does the output have and where is its decimal point?
+b) [4 pts] Show the adder's dot diagram.
+c) [3 pts] What is the output's minimum attainable negative value (most negative)?
+d) [3 pts] What is the output's minimum attainable positive value?
+e) [3 pts] What is the output's maximum attainable positive value?
+f) [20 pts] Test the circuit over at least 15 input values (including extreme cases). Turn in ***, opt. 1
+
+                       5     +-------+
+               a ------/-----|       |   
+                       5     |       |     ?
+               b ------/-----|   +   |-----/------ out
+                       5     |       |
+               c ------/-----|       |
+                             +-------+
+   
+2. [35 pts] Design and write the verilog for a block that performs floating point to fixed point number conversion. The floating point input (optional: is always normalized) and has a 6-bit signed, 2's complement mantissa in "2.4" format and a 3-bit 2's complement integer exponent. The fixed point 2's complement output has enough bits to fully represent the converted floating point number, but no more.
+a) [6 pts] How many bits does the fixed-point output have and where is its decimal point?
+b) [3 pts] What is the output's minimum attainable negative value?
+c) [3 pts] What is the output's minimum attainable positive value?
+d) [3 pts] What is the output's maximum attainable positive value?
+e) [20 pts] Test the circuit over at least 15 input values (including extreme cases). Turn in ***, opt. 1
+
+                       6     +--------+
+        mantissa ------/-----| float  |     ?
+                             |  to    |-----/------ out
+             exp ------/-----| fixed  |
+                       3     +--------+
+   
+3. [35 pts] Design and write the verilog for a block that performs fixed-point to floating-point number conversion. The input fixed-point number has 7 bits and is in "3.4" 2's complement notation. The floating point output has a 4-bit "3.1" 2's complement mantissa and a 2's complement integer exponent.
+Normalize the output mantissa—the output must never be denormalized. Also keep the maximum possible number of bits from the input in the output mantissa. Note that for some input values, the output will not be able to represent all bits in the input and it will be necessary to reduce the number of bits through rounding or truncation. Truncation is simpler, so use it for this problem.
+a) [6 pts] How many bits are required for the exponent?
+b) [3 pts] What is the output's minimum attainable negative value (most negative)?
+c) [3 pts] What is the output's minimum attainable positive value?
+d) [3 pts] What is the output's maximum attainable positive value?
+e) [20 pts] Test the circuit over at least 15 input values (including all extreme cases). Turn in ***, opt. 1
+
+                             +--------+     4 
+                       7     | fixed  |-----/----- mantissa
+              in ------/-----|  to    |
+                             | float  |-----/----- exp
+                             +--------+     ?
+   
+4. [15 pts] As mentioned in class, there are a number of ways to design a 4:2 adder.
+a) Using the diagram for the 4:2 given below and the truth table below, fill out the truth table with the values that must be a certain value (0 or 1) for the circuit to operate correctly. Leave others blank. A few of these required values have been filled in.
+
+                              a b c d
+                              | | | |
+                              | | | |
+                             +-------+
+                             |       |
+                        co --|  4:2  |-- ci
+                             |       |
+                             +-------+
+                               |   |  
+                               |   |  
+                               c1  s  
+
+          inputs  | outputs
+                c | c c
+        a b c d i | o 1 s
+       -----------+-------
+        0 0 0 0 0 | 0 0 0
+        0 0 0 0 1 | 0 0 1
+        0 0 0 1 0 |     1
+        0 0 0 1 1 |     0
+        0 0 1 0 0 |     1   
+        0 0 1 0 1 |         
+        0 0 1 1 0 |         
+        0 0 1 1 1 |         
+        0 1 0 0 0 |         
+        0 1 0 0 1 |         
+        0 1 0 1 0 |         
+        0 1 0 1 1 |         
+        0 1 1 0 0 |         
+        0 1 1 0 1 |         
+        0 1 1 1 0 |         
+        0 1 1 1 1 |         
+        1 0 0 0 0 |         
+        1 0 0 0 1 |         
+        1 0 0 1 0 |         
+        1 0 0 1 1 |         
+        1 0 1 0 0 |         
+        1 0 1 0 1 |         
+        1 0 1 1 0 |         
+        1 0 1 1 1 |         
+        1 1 0 0 0 |         
+        1 1 0 0 1 |         
+        1 1 0 1 0 |         
+        1 1 0 1 1 |         
+        1 1 1 0 0 |         
+        1 1 1 0 1 |         
+        1 1 1 1 0 |         
+        1 1 1 1 1 | 1 1 1
+   
+5. [10 pts] Write the verilog for a Full Adder module using xor, and, or, inv operators. Also write the verilog for a 4:2 adder module using two full adder cells. Turn in *** option 1.
+6. [25 pts] Six-input adder
+a) [10 pts] Draw a dot diagram and write the verilog for a fast adder with six 4-bit signed 2's complement inputs and a 6-bit 2's complement output. Compresses the inputs in carry-save form using your 4:2 and 3:2 adder modules, and add the final "carry" and "save" words using a "+" operator in verilog.
+b) [15 pts] Write a testbench module which instantiates the six-input adder module and test the circuit over the input values shown: Turn in ***
+        =   0 +   0 +   0 +   0 +  0 +  0
+        =   1 +   0 +   0 +   0 +  0 +  0
+        =   0 +   1 +   0 +   0 +  0 +  0
+        =   0 +   0 +   1 +   0 +  0 +  0
+        =   0 +   0 +   0 +   1 +  0 +  0
+        =   0 +   0 +   0 +   0 +  1 +  0
+        =   0 +   0 +   0 +   0 +  0 +  1
+        =  -1 +   0 +   0 +   0 +  0 +  0
+        =   0 +  -1 +   0 +   0 +  0 +  0
+        =   0 +   0 +  -1 +   0 +  0 +  0
+        =   0 +   0 +   0 +  -1 +  0 +  0
+        =   0 +   0 +   0 +   0 + -1 +  0
+        =   0 +   0 +   0 +   0 +  0 + -1
+        =   7 +   0 +   0 +   0 +  0 +  0
+        =   0 +   7 +   0 +   0 +  0 +  0
+        =   0 +   0 +   7 +   0 +  0 +  0
+        =   0 +   0 +   0 +   7 +  0 +  0
+        =   0 +   0 +   0 +   0 +  7 +  0
+        =   0 +   0 +   0 +   0 +  0 +  7
+        =  -8 +   0 +   0 +   0 +  0 +  0
+        =   0 +  -8 +   0 +   0 +  0 +  0
+        =   0 +   0 +  -8 +   0 +  0 +  0
+        =   0 +   0 +   0 +  -8 +  0 +  0
+        =   0 +   0 +   0 +   0 + -8 +  0
+        =   0 +   0 +   0 +   0 +  0 + -8
+        =   1 +   1 +   1 +   1 +  1 +  1
+        =  -1 +  -1 +  -1 +  -1 + -1 + -1
+        =   1 +   2 +   3 +   4 +  5 +  6
+        =   6 +   5 +   5 +   5 +  5 +  5
+        =  -7 +  -5 +  -5 +  -5 + -5 + -5
+        
+7. [35 pts] Design a block which adds 11 single-bit numbers, where each input is not a standard binary number—but instead each wire represents –1 or +1. A zero input is –1 and a one input is +1. The output of the adder is a 2's complement number sufficiently wide to represent all input combinations. This is an important structure in a CDMA transmitter. You may use 4:2, 3:2, and half adders (implemented as submodules however you wish; e.g., wire, reg, table) to add the inputs efficiently. Use only one carry-propagate adder, which you can implement with a "+" or "–" in verilog.
+8. 
+9.                                  +-------+
+10.                            11    |       |     ?
+11.                   in ------/-----|   +   |-----/------ out
+12.                                  |       |
+13.                                  +-------+
+  
+a) [10 pts] Draw a "dot diagram" for an efficient adder.
+b) [5 pts] Total up and state how much hardware (in area) your design requires in units of 3:2 adders assuming a 4:2 adder costs the same as two 3:2 adders and a half adder costs 0.5 3:2 adders.
+c) [5 pts] Estimate the delay of your complete adder by finding the longest path through your adder and clearly showing that path on your dot diagram using these estimates: 4:2 delay of 150 ps, 3:2 delay of 100 ps, and HA delay of 75 ps. (Delays do not scale with logic complexity to very roughly account for wire delays.)
+d) [15 pts] Write your design in verilog, test it, and turn in ***. You may find these as helpful starting points: prob1.v, prob1_ref.v, and prob1.vt.
+

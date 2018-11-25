@@ -1,0 +1,140 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/RippleFullAdder
+vcarrysave_8
+Z0 !s110 1517272059
+!i10b 1
+!s100 Hk2lC4:@7ZNeZHHMTe9iM3
+Ii6`U9_UiV_n52oQL;YWaK0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dK:/Kshitij Data/VerilogProjects/Homework1/Question1
+Z3 w1517269638
+Z4 8K:/Kshitij Data/VerilogProjects/Homework1/Question1/answer1_1.v
+Z5 FK:/Kshitij Data/VerilogProjects/Homework1/Question1/answer1_1.v
+L0 20
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1517272059.000000
+Z8 !s107 K:/Kshitij Data/VerilogProjects/Homework1/Question1/answer1_1.v|
+Z9 !s90 -reportprogress|300|-work|HW1_1|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/Question1/answer1_1.v|
+!s101 -O0
+!i113 1
+Z10 o-work HW1_1 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vcarrysave_8_testbench
+!s110 1517251543
+!i10b 1
+!s100 QM_fhLLVec1@T7K=25J393
+ILGU19[BS:k:WKk3SdmG_41
+R1
+R2
+w1517251525
+Z11 8K:/Kshitij Data/VerilogProjects/Homework1/Question1/answer1_1_tb.v
+Z12 FK:/Kshitij Data/VerilogProjects/Homework1/Question1/answer1_1_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1517251543.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework1/Question1/answer1_1_tb.v|
+Z13 !s90 -reportprogress|300|-work|HW1_1|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/Question1/answer1_1_tb.v|
+!s101 -O0
+!i113 1
+R10
+vFA
+R0
+!i10b 1
+!s100 CWTMmhjCUE6HPm20U6I5h3
+I2zUCojLDg::ELKQn?5G[E2
+R1
+R2
+R3
+R4
+R5
+L0 40
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@f@a
+vHA
+R0
+!i10b 1
+!s100 l0=Rm;CB[WBoC=JfVzoPe2
+I`MAW_FgT4@aSa_>H^oVhK3
+R1
+R2
+R3
+R4
+R5
+L0 48
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@h@a
+vTopLevel
+R0
+!i10b 1
+!s100 hgOD:XdgG7_Z^Bf6==>ie1
+Io2BRTejQ>ndOMnT]fA4RJ3
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@top@level
+vTopLevel_testbench
+!s110 1517272060
+!i10b 1
+!s100 ?W9IcXGRXFdULVT=2ZJ]M1
+IKFd63]QgE^moNCJ3_C[300
+R1
+R2
+w1517272049
+R11
+R12
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1517272060.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework1/Question1/answer1_1_tb.v|
+R13
+!s101 -O0
+!i113 1
+R10
+n@top@level_testbench

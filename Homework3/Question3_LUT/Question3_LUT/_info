@@ -1,0 +1,248 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/Homework2/Question4
+vComplexExponential
+Z0 !s110 1521010203
+!i10b 1
+!s100 LPabWCJ>8^M0gcLV>ed@@3
+IbZVWU1>Y^0RFR8gQfFG9f3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dK:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT
+w1520480542
+8K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT.v
+FK:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1521010203.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT.v|
+!s90 -reportprogress|300|-work|Question3_LUT|-stats=none|K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT.v|
+!s101 -O0
+!i113 1
+Z5 o-work Question3_LUT -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@complex@exponential
+vComplexExponential_piby4
+!s110 1521052684
+!i10b 1
+!s100 6EPmfNWT:j6O]5K:8HCCg3
+IEBBXe]BV=GOSWGJLW434B2
+R1
+R2
+w1521052680
+Z6 8K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4.v
+Z7 FK:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1521052684.000000
+Z8 !s107 K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4.v|
+Z9 !s90 -reportprogress|300|-work|Question3_LUT|-stats=none|K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4.v|
+!s101 -O0
+!i113 1
+R5
+n@complex@exponential_piby4
+vComplexExponential_piby4_tb
+R0
+!i10b 1
+!s100 D62aXzVBz;>KBGXC@^U>A2
+ImYC]15kR1mB8G4CJzbJTB0
+R1
+R2
+w1521010017
+8K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4_tb.v
+FK:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4_tb.v|
+!s90 -reportprogress|300|-work|Question3_LUT|-stats=none|K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_piby4_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@complex@exponential_piby4_tb
+vComplexExponential_tb
+!s110 1521016012
+!i10b 1
+!s100 fSd8i;7aITO5J:X:;jcJi1
+IC8KRKHeFkR5HQ5U?H^hiL0
+R1
+R2
+w1521016003
+8K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_tb.v
+FK:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1521016012.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_tb.v|
+!s90 -reportprogress|300|-work|Question3_LUT|-stats=none|K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@complex@exponential_tb
+vconj2
+!s110 1521055072
+!i10b 1
+!s100 zk9m`JSf<<Va@>95:L=X12
+I6?X54TaD?DelO>Q:k7ok_1
+R1
+R2
+w1521055062
+R6
+R7
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1521055072.000000
+R8
+R9
+!s101 -O0
+!i113 1
+R5
+vconj3
+!s110 1521060240
+!i10b 1
+!s100 KYe0;C8[lM7U52VNT;?OL3
+I31ek>R[L2m^Do2AFHclg83
+R1
+R2
+w1521060113
+8C:/Users/kshit/Desktop/conj3 (1).v
+FC:/Users/kshit/Desktop/conj3 (1).v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1521060240.000000
+!s107 C:/Users/kshit/Desktop/conj3 (1).v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kshit/Desktop/conj3 (1).v|
+!s101 -O0
+!i113 1
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vHomework3_3_LUT_interpolation
+!s110 1521064071
+!i10b 1
+!s100 oAnBBTi?3SPV?_9NUBSK70
+IU34JW7IU`D;EEOKC]?>Li3
+R1
+R2
+w1521064044
+Z11 8K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_interpolation.v
+Z12 FK:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_interpolation.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1521064071.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_interpolation.v|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_interpolation.v|
+!s101 -O0
+!i113 1
+R10
+n@homework3_3_@l@u@t_interpolation
+vHomework3_3_LUT_piby4
+!s110 1521063894
+!i10b 1
+!s100 LR^RD9E`IX2Ln5=hLbdb^3
+I<5iASX5=2>3M^4WzTU[CG0
+R1
+R2
+w1521063882
+R6
+R7
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1521063894.000000
+R8
+R9
+!s101 -O0
+!i113 1
+R5
+n@homework3_3_@l@u@t_piby4
+vLUTinterpolation
+!s110 1521058240
+!i10b 1
+!s100 1ADoRFzN=TTU=gECEY@M[2
+IjZhnVcljlchaPEHenbUTI3
+R1
+R2
+w1521058220
+R11
+R12
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1521058240.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/Homework3_3_LUT_interpolation.v|
+R13
+!s101 -O0
+!i113 1
+R10
+n@l@u@tinterpolation
+vmatlabgen
+!s110 1521058440
+!i10b 1
+!s100 SUU[6?4T29>@K``n73jQn0
+I^G@XZ<Ge]9DE<T;nc:_@40
+R1
+R2
+w1521058420
+Z14 8K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/matlabfilegenerator.v
+Z15 FK:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/matlabfilegenerator.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1521058439.000000
+Z16 !s107 K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/matlabfilegenerator.v|
+Z17 !s90 -reportprogress|300|-work|work|-stats=none|K:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT/matlabfilegenerator.v|
+!s101 -O0
+!i113 1
+R10
+vmatlabgen1
+!s110 1521063869
+!i10b 1
+!s100 hzKhdV7aLc^f[j`Whe`5S0
+I>8YQ;5eYDz5Z3Q3P671WK0
+R1
+R2
+w1521063863
+R14
+R15
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1521063869.000000
+R16
+R17
+!s101 -O0
+!i113 1
+R10

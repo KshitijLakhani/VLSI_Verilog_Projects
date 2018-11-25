@@ -1,0 +1,182 @@
+module Top (
+input [7:0] multiplicand,
+input [7:0] multiplier,
+output reg [15:0] answer);
+
+wire [15:0] pp_0;
+wire [15:0] pp_1;
+wire [15:0] pp_2;
+wire [15:0] pp_3;
+
+wire [15:0] line1;
+wire [15:0] line2;
+
+wire multiplicand_neg;
+wire multiplier_neg;
+
+booth2_ppgenerator i1(multiplicand[7:0],multiplier[7:0],pp_0[15:0],pp_1[15:0],pp_2[15:0],pp_3[15:0],multiplicand_neg,multiplier_neg);
+carrysavestage i2(pp_0[15:0],pp_1[15:0],pp_2[15:0],pp_3[15:0],line1[15:0],line2[15:0]);
+
+always @ (*)
+begin
+if((multiplier_neg ^ multiplicand_neg)==1'b1)
+begin
+answer[15:0]=(~(line1[15:0] + line2[15:0])) + 16'b0000000000000001;
+end
+else
+begin
+answer[15:0]=line1[15:0] + line2[15:0];
+end
+end
+endmodule
+
+module carrysavestage(
+input [15:0] pp0,
+input [15:0] pp1,
+input [15:0] pp2,
+input [15:0] pp3,
+output [15:0] line1,
+output [15:0] line2);
+
+assign line1[3:0]=pp0[3:0];
+assign line2[4:0]={1'b0,pp1[3],pp1[2],2'b00};
+
+wire cs0_c0,cs1_c0,cs2_c0,cs3_c0,cs4_c0,cs5_c0,cs6_c0,cs7_c0,cs8_c0,cs9_c0,cs10_c0;
+
+carrysave_4is2 cs0({pp0[4],pp1[4],pp2[4],pp3[4],1'b0},cs0_c0,line2[5],line1[4]);
+carrysave_4is2 cs1({pp0[5],pp1[5],pp2[5],pp3[5],cs0_c0},cs1_c0,line2[6],line1[5]);
+carrysave_4is2 cs2({pp0[6],pp1[6],pp2[6],pp3[6],cs1_c0},cs2_c0,line2[7],line1[6]);
+carrysave_4is2 cs3({pp0[7],pp1[7],pp2[7],pp3[7],cs2_c0},cs3_c0,line2[8],line1[7]);
+carrysave_4is2 cs4({pp0[8],pp1[8],pp2[8],pp3[8],cs3_c0},cs4_c0,line2[9],line1[8]);
+carrysave_4is2 cs5({pp0[9],pp1[9],pp2[9],pp3[9],cs4_c0},cs5_c0,line2[10],line1[9]);
+carrysave_4is2 cs6({pp0[10],pp1[10],pp2[10],pp3[10],cs5_c0},cs6_c0,line2[11],line1[10]);
+carrysave_4is2 cs7({pp0[11],pp1[11],pp2[11],pp3[11],cs6_c0},cs7_c0,line2[12],line1[11]);
+carrysave_4is2 cs8({pp0[12],pp1[12],pp2[12],pp3[12],cs7_c0},cs8_c0,line2[13],line1[12]);
+carrysave_4is2 cs9({pp0[13],pp1[13],pp2[13],pp3[13],cs8_c0},cs9_c0,line2[14],line1[13]);
+carrysave_4is2 cs10({pp0[14],pp1[14],pp2[14],pp3[14],cs9_c0},cs10_c0,line2[15],line1[14]);
+carrysave_4is2 cs11({pp0[15],pp1[15],pp2[15],pp3[15],cs10_c0},,,line1[15]);
+
+endmodule
+
+module booth2_ppgenerator(
+input [7:0] multiplicand,
+input [7:0] multiplier,
+output [15:0] pp_0,
+output [15:0] pp_1,
+output [15:0] pp_2,
+output [15:0] pp_3,
+output reg multiplicand_neg,
+output reg multiplier_neg);
+
+reg [7:0] plier;
+reg [7:0] plicand;
+reg [8:0] plier_9bit;
+
+wire [7:0] pp0;
+wire [7:0] pp1;
+wire [7:0] pp2;
+wire [7:0] pp3;
+
+always @ (*)
+begin
+multiplier_neg=1'b0;
+multiplicand_neg=1'b0;
+
+if (multiplier[7]==1)   // if multiplier negative
+begin
+multiplier_neg=1'b1;
+plier[7:0]= (~ multiplier[7:0]) + (8'b00000001);
+end
+else               // if multiplier positive
+begin
+plier[7:0]=multiplier[7:0];
+end
+
+if (multiplicand[7]==1)   // if multiplicand negative
+begin
+multiplicand_neg=1'b1;
+plicand[7:0]= (~ multiplicand[7:0]) + (8'b00000001);
+end
+else                  // if multiplicand positive
+begin
+plicand[7:0]=multiplicand[7:0];
+end
+plier_9bit[8:0]={plier[7:0],1'b0};
+end
+// Partial Product generation
+
+ppgen ppgen1({plier_9bit[2],plier_9bit[1],plier_9bit[0]},plicand[7:0],pp0[7:0]);
+ppgen ppgen2({plier_9bit[4],plier_9bit[3],plier_9bit[2]},plicand[7:0],pp1[7:0]);
+ppgen ppgen3({plier_9bit[6],plier_9bit[5],plier_9bit[4]},plicand[7:0],pp2[7:0]);
+ppgen ppgen4({plier_9bit[8],plier_9bit[7],plier_9bit[6]},plicand[7:0],pp3[7:0]);
+
+assign pp_0[15:0]={pp0[7],pp0[7],pp0[7],pp0[7],pp0[7],pp0[7],pp0[7],pp0[7],pp0[7:0]};
+assign pp_1[15:0]={pp1[7],pp1[7],pp1[7],pp1[7],pp1[7],pp1[7],pp1[7:0],2'b00};
+assign pp_2[15:0]={pp2[7],pp2[7],pp2[7],pp2[7],pp2[7:0],4'b0000};
+assign pp_3[15:0]={pp3[7],pp3[7],pp3[7:0],6'b000000};
+
+endmodule
+module ppgen(
+input [2:0] in,
+input [7:0] multiplicand,
+output reg [7:0] pp_8bit);
+
+always @ (*)
+begin
+case (in[2:0])
+3'b000:
+begin
+pp_8bit[7:0]=8'b00000000;  //0
+end
+3'b001:
+begin
+pp_8bit[7:0]=multiplicand[7:0];  //+X
+end
+3'b010:
+begin
+pp_8bit[7:0]=multiplicand[7:0];   //+X
+end
+3'b011:
+begin
+pp_8bit[7:0]=(multiplicand[7:0] + multiplicand[7:0]); //+2X
+end
+3'b100:
+begin
+pp_8bit[7:0]=((~multiplicand[7:0]) + 8'b00000001) + ((~multiplicand[7:0]) + 8'b00000001);  //-2X
+end
+3'b101:
+begin
+pp_8bit[7:0]=((~multiplicand[7:0]) + 8'b00000001);   //-X
+end
+3'b110:
+begin
+pp_8bit[7:0]=((~multiplicand[7:0]) + 8'b00000001);  //-X
+end
+3'b111:
+begin
+pp_8bit[7:0]=8'b00000000;    // 0
+end
+endcase
+end
+endmodule
+module carrysave_4is2 (
+input [4:0] in,
+output c0,
+output c1,
+output sum
+);
+wire connection;
+FullAdder FA0 (in[4],in[3],in[2],connection,c0);
+FullAdder FA1 (connection,in[1],in[0],sum,c1);
+endmodule
+
+module FullAdder(
+input in1,
+input in2,
+input cin,
+output sum,
+output cout
+);
+assign sum = (in1 ^ in2) ^ cin;
+assign cout = (in1 & in2) | (cin & (in1 ^ in2));
+endmodule

@@ -1,0 +1,5 @@
+module bitwiseAND_10bit_tb();
+reg [9:0] in1;
+reg [9:0] in2;
+wire [9:0] out;
+bitwiseAND_10bit testbench_instantiate(in1[9:0],in2[9:0])

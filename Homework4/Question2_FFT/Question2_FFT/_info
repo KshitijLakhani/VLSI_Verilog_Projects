@@ -1,0 +1,356 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/Homework3/Question3_LUT
+vcomplexmulttrial
+Z0 !s110 1521653369
+!i10b 1
+!s100 LF60lA`8BDXP=Kj0f8@C53
+ILYaS]KQA[cXCQSS>e0V^f1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT
+w1521510939
+8K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial.v
+FK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1521653369.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial.v|
+!s90 -reportprogress|300|-work|Question2_FFT|-stats=none|K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial.v|
+!s101 -O0
+!i113 1
+Z5 o-work Question2_FFT -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vcomplexmulttrial2
+R0
+!i10b 1
+!s100 [:OJOB=gjTg;0@8Gm1fh=1
+I>_I9ec^C75MIBFidCgI[h3
+R1
+R2
+w1521558098
+8K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2.v
+FK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2.v|
+!s101 -O0
+!i113 1
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vcomplexmulttrial2_tb
+Z7 !s110 1521653370
+!i10b 1
+!s100 hG]ECFB3TGeD?X82iOD9g2
+IgaNjC8XT@;hBQQfR?lb;73
+R1
+R2
+w1521558247
+8K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2_tb.v
+FK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1521653370.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2_tb.v|
+!s101 -O0
+!i113 1
+R6
+vcomplexmulttrial_tb
+R0
+!i10b 1
+!s100 QE0<Sz^KXQHWH;hX>W;X[2
+I?DP@zi7BFOnMHli6Ab>0l1
+R1
+R2
+w1521521953
+8K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_tb.v
+FK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_tb.v|
+!s90 -reportprogress|300|-work|Question2_FFT|-stats=none|K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_tb.v|
+!s101 -O0
+!i113 1
+R5
+vFFT
+R0
+!i10b 1
+!s100 3>a^4=fn@=>hD1J@I5^H83
+ITDZO2DkUj4?CdVU7k2<HA0
+R1
+R2
+Z9 w1521567507
+Z10 8K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT.v
+Z11 FK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z12 !s107 K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT.v|
+Z13 !s90 -reportprogress|300|-work|Question2_FFT|-stats=none|K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT.v|
+!s101 -O0
+!i113 1
+R5
+n@f@f@t
+vFFT_final
+!s110 1522036760
+!i10b 1
+!s100 ;:d9TiIVXe=H_i`[7AY`W1
+Ib]^9;4P@^o_EA2P985bfM2
+R1
+R2
+w1522036755
+8K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final.v
+FK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1522036760.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final.v|
+!s90 -reportprogress|300|-work|work|-stats=none|K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final.v|
+!s101 -O0
+!i113 1
+R6
+n@f@f@t_final
+vFFT_final_tb
+!s110 1522041568
+!i10b 1
+!s100 eDZPa`73W7Q:e?haB<Y1`2
+Im_bRzSAYLAf6TL?:Oe`c=2
+R1
+R2
+w1522041554
+8K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final_tb.v
+FK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1522041567.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final_tb.v|
+!s101 -O0
+!i113 1
+R6
+n@f@f@t_final_tb
+vFFT_pipe
+Z14 !s110 1521653404
+!i10b 1
+!s100 EO;FoAjMRVJKmjXo`FTQ91
+I;^ZTd[UIeDJnb9EPkodBI2
+R1
+R2
+Z15 w1521653400
+Z16 8K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_pipe.v
+Z17 FK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_pipe.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z18 !s108 1521653404.000000
+Z19 !s107 K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_pipe.v|
+Z20 !s90 -reportprogress|300|-work|work|-stats=none|K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_pipe.v|
+!s101 -O0
+!i113 1
+R6
+n@f@f@t_pipe
+vHomework3_3_LUT_piby4
+!s110 1521563096
+!i10b 1
+!s100 LBZ>l9K_8C`RoW]Vk>HO?3
+IAlFdG[iSM8_PFAU=3z]Vg0
+R1
+R2
+w1521563074
+R10
+R11
+L0 107
+R3
+r1
+!s85 0
+31
+!s108 1521563096.000000
+R12
+R13
+!s101 -O0
+!i113 1
+R5
+n@homework3_3_@l@u@t_piby4
+vmatlabgen
+!s110 1521564954
+!i10b 1
+!s100 JQ1bi8@6T166YnSzoOKjd2
+I]HLig_5j_Bm3EPU8>KRTG3
+R1
+R2
+w1521518042
+8K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen.v
+FK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1521564954.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen.v|
+!s90 -reportprogress|300|-work|Question2_FFT|-stats=none|K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen.v|
+!s101 -O0
+!i113 1
+R5
+vmatlabgen2
+R7
+!i10b 1
+!s100 U9X07o=NEmn;K@[VmC_K12
+I9d?dL=JBU95C2BE`RKKgP0
+R1
+R2
+w1521558868
+8K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen2.v
+FK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen2.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen2.v|
+!s101 -O0
+!i113 1
+R6
+vmatlabgenFFT
+!s110 1521564955
+!i10b 1
+!s100 ojQaBW1^DJT;;I^CCmiG50
+INngi[I1zJC@_c;Ge049Nh1
+R1
+R2
+w1521564311
+Z21 8K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabFFT.v
+Z22 FK:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabFFT.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1521564955.000000
+Z23 !s107 K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabFFT.v|
+Z24 !s90 -reportprogress|300|-work|work|-stats=none|K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabFFT.v|
+!s101 -O0
+!i113 1
+R6
+nmatlabgen@f@f@t
+vmatlabgenFFT_pipe
+!s110 1521654408
+!i10b 1
+!s100 OfUPgfFd7:k<58_SQPH_70
+I7e>n;0`akgT_?UBfF0nkA2
+R1
+R2
+w1521654403
+R21
+R22
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1521654408.000000
+R23
+R24
+!s101 -O0
+!i113 1
+R6
+nmatlabgen@f@f@t_pipe
+vWngenerator
+R14
+!i10b 1
+!s100 lo31H_ZF>_7bKWT@3ghd_1
+IUC3?b;H3Z02@>c0[b<XSR1
+R1
+R2
+R15
+R16
+R17
+L0 122
+R3
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+!i113 1
+R6
+n@wngenerator
+vXgenerator
+R0
+!i10b 1
+!s100 c`ARC:J3D<E>K8FCeI;hL0
+IgfMjlBzMZm]CNhGL[Tj:=3
+R1
+R2
+R9
+R10
+R11
+L0 67
+R3
+r1
+!s85 0
+31
+R4
+R12
+R13
+!s101 -O0
+!i113 1
+R5
+n@xgenerator
+vYgenerator
+R0
+!i10b 1
+!s100 Bg?h58Fg=3h[gm0`0Jd<;3
+Io<mHC:cC8h1Ji^3PLhka]2
+R1
+R2
+R9
+R10
+R11
+L0 83
+R3
+r1
+!s85 0
+31
+R4
+R12
+R13
+!s101 -O0
+!i113 1
+R5
+n@ygenerator

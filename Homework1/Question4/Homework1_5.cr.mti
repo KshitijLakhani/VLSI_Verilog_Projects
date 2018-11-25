@@ -1,0 +1,8 @@
+{K:/Kshitij Data/VerilogProjects/Homework1/Question4/ftofmaini.v} {1 {vlog -work fixedtofloatingnew -stats=none {K:/Kshitij Data/VerilogProjects/Homework1/Question4/ftofmaini.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module fixedtofloating
+
+Top level modules:
+	fixedtofloating
+
+} {} {}}

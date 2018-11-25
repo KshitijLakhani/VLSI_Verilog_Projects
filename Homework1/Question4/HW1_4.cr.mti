@@ -1,0 +1,50 @@
+{K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v} {0 {vlog -work fixedtofloating -stats=none {K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module fixedtofloating_tb
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(5): (vlog-2110) Illegal reference to memory "fixedinput".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(5): (vlog-2110) Illegal reference to net array "#implicit-wire#0".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(5): (vlog-2110) Illegal reference to memory "fixedinput".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(5): (vlog-2110) Illegal reference to net array "#implicit-wire#0".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(5): (vlog-2110) Illegal reference to net array "floatingmantissa".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(5): (vlog-2110) Illegal reference to net array "floatingexponent".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(9): (vlog-2110) Illegal reference to memory "fixedinput".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(9): (vlog-2110) Illegal reference to net array "floatingmantissa".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(9): (vlog-2110) Illegal reference to net array "floatingexponent".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(11): (vlog-2110) Illegal reference to memory "fixedinput".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(11): Illegal LHS of assignment.
+** Error (suppressible): (vlog-2997) K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(11): Illegal assignment to type 'reg $[6:0]' from type 'reg signed[31:0]': Cannot assign a packed type to an unpacked type.
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(13): (vlog-2110) Illegal reference to memory "fixedinput".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(13): Illegal LHS of assignment.
+** Error (suppressible): (vlog-2997) K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(13): Illegal assignment to type 'reg $[6:0]' from type 'reg signed[31:0]': Cannot assign a packed type to an unpacked type.
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(15): (vlog-2110) Illegal reference to memory "fixedinput".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(15): Illegal LHS of assignment.
+** Error (suppressible): (vlog-2997) K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(15): Illegal assignment to type 'reg $[6:0]' from type 'reg signed[31:0]': Cannot assign a packed type to an unpacked type.
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(17): (vlog-2110) Illegal reference to memory "fixedinput".
+
+** Error: K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(17): Illegal LHS of assignment.
+** Error (suppressible): (vlog-2997) K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4_tb.v(17): Illegal assignment to type 'reg $[6:0]' from type 'reg signed[31:0]': Cannot assign a packed type to an unpacked type.
+
+
+} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0 23.0 24.0 25.0 27.0 28.0 29.0 30.0 32.0 33.0 34.0 35.0 37.0 38.0 39.0 40.0} {}} {K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4.v} {1 {vlog -work fixedtofloating -stats=none {K:/Kshitij Data/VerilogProjects/Homework1/Question4/answer1_4.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module fixedtofloating
+
+Top level modules:
+	fixedtofloating
+
+} {} {}}

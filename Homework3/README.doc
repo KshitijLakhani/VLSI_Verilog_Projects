@@ -1,0 +1,83 @@
+Website link for HW 3
+
+http://web.ece.ucdavis.edu/~bbaas/281/hwk/3/
+
+
+1. [20 pts] Using matlab, write a function which calculates the minimum number of non-zero partial products needed to calculate the product of a number multiplied by a fixed number. Both +multiplicandand –multiplicand partial products are allowed. Consider positive and negative numbers with a resolution of 0.5 (e.g., 0, 0.5, 1.0, ...).
+If you would like to use your own algorithm, that's great. Otherwise, you might try coding an algorithm that works something like this:
+o For this discussion, "power of two" means both +2^k and –2^k where k is some integer.
+o Assuming the number is not a power of two, start with the powers of two just smaller and just larger than the input number. For example, if the input is 56, consider 32 and 64.
+o Choose whichever number is closer. In this example, choose 64.
+o Subtract that power of two and repeat the procedure with the new number until the remainder is reduced to zero. For example, choose 56 – 64 = –8 so now use –8.
+a) [15 pts] Write the described function in matlab.
+b) [5 pts] Assuming your function is called "numppterms", run the following bit of matlab code (a few points need fixing), and report the Total Sum for all numbers 0.5 – 100.00 .
+   StepSize = 0.5;
+   NumTermsArrayPos = zeros(1, 100/StepSize);    % small speedup if init first
+   for k = StepSize : StepSize : 100,
+      NumTermsArrayPos(k/StepSize) = numppterms(k);
+   end
+
+   fprintf('Total sum for +0.5 - +100.00 = %i\n', sum(NumTermsArrayPos));
+
+   figure(1); clf;
+   plot(StepSize:StepSize:100, NumTermsArrayPos, 'x');
+   axis([0 101 0 1.1* max(NumTermsArrayPos)]);
+   xlabel('Input number');
+   ylabel('Number of partial product terms');
+   
+
+2. [30 pts] An FIR filter has the coefficients,
+3.    coeff = [17   –90   241   902   241   –90   17];
+4. 
+   
+Assume the coefficients can not be scaled larger, but they can be scaled smaller (up to 50% smaller) and the gain change can be compensated elsewhere. This implementation works with integers only, so round(·) scaled coefficients.
+a) [5 pts] How many partial products are necessary to implement the FIR filter with the given coefficients?
+b) [5 pts] See if a scaling for the coefficients exists such that the filter can be built with fewer partial products. Find the scaling that yields the minimum number of partial products.
+c) [5 pts] Turn in a plot of the number of required partial products vs. the scaling factor. The plot should look something like the bogus results this matlab code generates.
+   figure(1); clf;
+   plot(0.5:0.001:1.0, round(5* rand(1,501)+1), 'x');
+   axis([0.45 1.05 0 6.5]);
+   xlabel('Scaling factor');
+   ylabel('Number of partial product terms');
+   title('EEC 281, Hwk/proj 2, Problem 3, Plot of bogus results');
+   
+d) [15 pts] Draw dot diagrams showing how the partial products would be added (include sign extension) for the optimized coefficients you found in (b), using the FIR architecture shown below and an 8-bit 2's complement input word. Use 4:2, 3:2, and half adders as necessary and no need to design the final stage carry-propagate adder.
+
+
+
+5. [3 × 25 pts] Complex exponential generator. Design a block which calculates the complex exponential ej? = cos(?) + j sin(?) according to Euler's formula for any given ?, every cycle. It would be very useful as a very-high-precision complex numerically-controlled oscillator. The latency may be as many cycles as needed. 
+
+The block's I/O signals are:
+o in_theta input
+12-bit fixed-point unsigned where:
+0000_0000_0000 = 0.000 radians, and
+1111_1111_1111 = 2? × (4095/4096) radians
+o reset input
+o out_real, out_imag outputs
+each are 16-bit fixed-point 2's complement.
+The test procedure is as follows:
+4. Generate all 2^12 possible theta inputs [0, 2?) in verilog
+5. Calculate the ej? output for each theta with your verilog design
+6. Output both the a) theta input and b) verilog output to a plain text matlab-readable *.m file. For example, a file such as: 
+theta(1) = 0; re(1) = 64; im(1) = 0; % index 1 = angle 0 unfortunately since matlab can not have index = 0
+theta(2) = 1; re(2) = 64; im(2) = 6;
+theta(3) = 2; re(3) = 63; im(3) = 12;
+where values can be printed out and then re-scaled in matlab however it is most convenient. Another possible format is: 
+theta(0+1) = 0; out_ver(1) = 64 + j * 0; % index 1 = angle 0 unfortunately since matlab can not have index = 0
+theta(1+1) = 1; out_ver(2) = 64 + j * 6;
+theta(2+1) = 2; out_ver(3) = 63 + j * 12;
+Suggestion: print integers in verilog. Use "signed" reg's only for the printf statement.
+7. Compare a) verilog output and b) exp(j*theta) using difff.m in matlab.
+Design and write verilog for the block three ways:
+8. With a lookup table(s) for all values (largest area)
+9. With lookup table(s) that cover no more than ?/4, or one-eighth of the total 0–2? range and utilize additional logic to compute outputs for the entire span of 0–2? .
+Use symmetry properties of the sin() and cos() such as the ones in the table found on this wikipedia page.
+10. Same as design #2 but where outputs for odd theta inputs are linearly-interpolated between samples from the lookup table(s) and the system has a throughput of one calculation for every two clock cycles. The goal is smaller area.
+For each of your three designs, submit (a) through (c) below. When submitting the verilog file of your lookup tables, print only the first ~15 lines and the last ~15 lines and insert the comment "<Many lines removed>" for lines you deleted.
+a) [5 pts] Detailed pipelined block diagram with all functional details.
+b) [10 pts] (Accuracy points for smallest error compared to matlab: 10pts: within 1 bit, 5pts: within 2 bits) 
+Write the Energy_diff/Energy_data0 value in dB in your report and also submit the four plots and printout produced by difff.m.
+c) [10 pts] Synthesize each of the three designs at a minimum of 3 different cycle time values and report the area for each.
+NEXT TIME: Synthesize at these frequencies: 1) a very long cycle time, e.g., 1 ms = 1 KHz (minimum area); 2) a very short cycle time, e.g., 0.1 ns = 10 GHz; and 3) the cycle time achieved in the synthesis run for #2 × 1.5
+No points are possible for (b) or (c) unless the design is fully functional and without synthesis errors or serious warnings.
+

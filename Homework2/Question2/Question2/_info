@@ -1,0 +1,181 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_5
+vcarrysave_4is2
+Z0 !s110 1519424773
+!i10b 1
+!s100 ^:[IR9m]JJC8k>LGUlNQ]3
+Ie>;cMGC@=]mmgXg_Xlg?G0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dK:/Kshitij Data/VerilogProjects/Homework2/Question2
+Z3 w1519422002
+Z4 8K:/Kshitij Data/VerilogProjects/Homework2/Question2/HW2_2.v
+Z5 FK:/Kshitij Data/VerilogProjects/Homework2/Question2/HW2_2.v
+L0 313
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1519424773.000000
+Z8 !s107 K:/Kshitij Data/VerilogProjects/Homework2/Question2/HW2_2.v|
+Z9 !s90 -reportprogress|300|-work|Question2|-stats=none|K:/Kshitij Data/VerilogProjects/Homework2/Question2/HW2_2.v|
+!s101 -O0
+!i113 1
+Z10 o-work Question2 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vFullAdder
+R0
+!i10b 1
+!s100 Hz1]GEzI`bNNj:=33F^SM3
+IkM>1[lAWi8GFA@HI7>FfQ3
+R1
+R2
+R3
+R4
+R5
+L0 324
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@full@adder
+vpartial_product_generator
+R0
+!i10b 1
+!s100 zZE9]U^EMJ@fhbgnn8K@Z2
+IbcP6fhXG83XYkJk0cmK_@3
+R1
+R2
+R3
+R4
+R5
+L0 155
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vstage1
+R0
+!i10b 1
+!s100 ]bk__czZ@4kJ=QdOP2OiU2
+IOCYIJ9c`kE>D4SA7Thof@1
+R1
+R2
+R3
+R4
+R5
+L0 72
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vstage2
+R0
+!i10b 1
+!s100 7F?Zb@7jXS^NA9zK^P^VY1
+I@WeZ>>VA8YTJK`TLRB=Hi2
+R1
+R2
+R3
+R4
+R5
+L0 101
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vstage3
+R0
+!i10b 1
+!s100 D5hVFJA=]e7][8CU5XEVF2
+I=a7i@@7fh_;E[Q2e^5Z2d2
+R1
+R2
+R3
+R4
+R5
+L0 127
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vTop
+R0
+!i10b 1
+!s100 BQ4z<mzPS^f]lAm26Q<im2
+Ioc]i:^dCSJ9XB8k@FgnZf3
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@top
+vTop_testbench
+R0
+!i10b 1
+!s100 U3j^jI8m8IlGjQnl4JU;Y0
+IfJ8F>XOh<_K`GMVY`JDC_0
+R1
+R2
+w1519424768
+8K:/Kshitij Data/VerilogProjects/Homework2/Question2/HW2_2_tb.v
+FK:/Kshitij Data/VerilogProjects/Homework2/Question2/HW2_2_tb.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 K:/Kshitij Data/VerilogProjects/Homework2/Question2/HW2_2_tb.v|
+!s90 -reportprogress|300|-work|Question2|-stats=none|K:/Kshitij Data/VerilogProjects/Homework2/Question2/HW2_2_tb.v|
+!s101 -O0
+!i113 1
+R10
+n@top_testbench

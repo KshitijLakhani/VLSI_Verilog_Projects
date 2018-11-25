@@ -1,0 +1,56 @@
+Website Link for HW 2 questions - 
+
+http://web.ece.ucdavis.edu/~bbaas/281/hwk/2/
+
+
+
+1. [25 pts] The purpose of this problem is to familiarize you with the synthesis process and to give you a rough feeling for the size of a few simple circuits in our standard cell library's technology. Copy the files from the DC tutorial (see link on main EEC281 page) to get started. Synthesize the following blocks and report their total cell area. Do not include registers (flip-flops) in these blocks. Also, do not declare any wires or registers as "signed", but assume words are all 2's complement signed unless stated otherwise. No need to simulate, but your verilog must compile correctly (run "make check").Also, for this problem, do not worry if designs do not meet timing (negative slack time).
+Turn in: 1) source verilog, 2) totals in a single table so it can be used as a note sheet in the future. Do not submit any output synthesis reports.
+Blocks
+a) [2 pts] bitwise AND of two 10-bit numbers (10-bit output)
+b) [2 pts] 3:2 adder using verilog "&" "|", "^", "~".
+Draw your circuit and the circuit output by DC.
+c) [2 pts] 3:2 adder using verilog "+".
+d) [3 pts] 10-bit adder (11-bit output). Use "+" in verilog.
+e) [5 pts] an adder which adds 11 5-bit numbers using verilog "+" (i.e., something like, assign out = in0 + in1 + in2 + ...) and produces a 5-bit sum.
+f) [5 pts] your 11-input adder from hwk/proj 1, Problem 7. If your adder is not functional, improve it so it is at least synthesizable, synthesize it anyway, and write a note on your submission that it is not functional.
+g) [3 pts] 8-bit x 8-bit unsigned multiplier (16-bit output). Use "*" in verilog.
+h) [3 pts] 16-bit x 16-bit unsigned multiplier (32-bit output). Use "*" in verilog.
+
+2. [45 pts] Build an 8-bit × 8-bit multiplier where both inputs are in signed 2's complement format, partial products are compressed to two terms using carry-save adders, and the final CPA is done with a "+" in verilog. Register all inputs and outputs. The multiplier input is encoded using straightforward non-Booth encoding.
+a) [10 pts] Draw the dot diagram including all adders
+b) [25 pts] Write the design in verilog, test with at least 15 test cases in addition to the ones listed below. Verify using method ***(3).
+              0     x           0
+              1     x     max pos
+              1     x     max neg
+        max pos     x           1
+        max neg     x           1
+        max pos     x     max pos
+        max pos     x     max neg
+        max neg     x     max pos
+        max neg     x     max neg
+        
+c) [10 pts] Synthesize the design and state area. Submit *.area and *.tim (longest path only) reports only.
+
+3. [35 pts] Build a multiplier with the same specifications as given in problem 2 except: (1) the multiplier input is encoded using Booth-2, and (2) use "+" (not "–") in verilog to add the partial products.
+a) [5 pts] Same as problem 2(a)
+b) [20 pts] Same as problem 2(b)
+c) [10 pts] Same as problem 2(c)
+
+4. [40 pts] Design a state machine with the following states and actions. Details not specified should be chosen by you and stated in your submission.
+o IDLE state is entered when reset is high at any time.
+The output shutter is always zero when in the IDLE state.
+The machine transitions to CAMERA_ON after 3 cycles.
+o While in CAMERA_ON state, the output signal shutter is pulsed as shown:
+cycle 1:   shutter=1
+cycle 2:   shutter=0
+cycle 3:   shutter=0
+cycle 4:   shutter=1
+cycle 5:   shutter=0
+cycle 6:   shutter=0
+The machine transitions to PROCESS in the 7th cycle.
+o PROCESS state transitions to IDLE immediately if the skip input signal is 1
+If skip is 0, then the machine stays in PROCESS for four cycles and then transitions to IDLE.
+a) [10 pts] Draw a pipelined block diagram of your hardware design.
+b) [30 pts] Implement the design in verilog and show that it correctly works for both values of skip. Verify using method ***(2).
+

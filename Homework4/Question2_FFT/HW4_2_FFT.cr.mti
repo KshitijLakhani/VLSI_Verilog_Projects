@@ -1,0 +1,82 @@
+{K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_tb.v} {1 {vlog -work Question2_FFT -stats=none {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module complexmulttrial_tb
+
+Top level modules:
+	complexmulttrial_tb
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2.v} {1 {vlog -work work -stats=none {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module complexmulttrial2
+
+Top level modules:
+	complexmulttrial2
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen2.v} {1 {vlog -work work -stats=none {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen2.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module matlabgen2
+
+Top level modules:
+	matlabgen2
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_pipe.v} {2 {vlog -work work -stats=none {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_pipe.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FFT_pipe
+-- Compiling module Wngenerator
+** Warning: K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_pipe.v(173): (vlog-2182) 'real1' might be read before written in always_comb or always @* block.
+
+** Warning: K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_pipe.v(172): (vlog-2182) 'imag1' might be read before written in always_comb or always @* block.
+
+
+Top level modules:
+	FFT_pipe
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabFFT.v} {1 {vlog -work work -stats=none {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabFFT.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module matlabgenFFT_pipe
+
+Top level modules:
+	matlabgenFFT_pipe
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final_tb.v} {1 {vlog -work work -stats=none {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT_final_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FFT_final_tb
+
+Top level modules:
+	FFT_final_tb
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2_tb.v} {1 {vlog -work work -stats=none {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial_2_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module complexmulttrial2_tb
+
+Top level modules:
+	complexmulttrial2_tb
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen.v} {0 {vlog -work Question2_FFT -stats=none {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module matlabgen
+** Error: K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/matlabgen.v(18): (vlog-2730) Undefined variable: 'clk'.
+
+
+} {4.0 5.0} {}} {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT.v} {2 {vlog -work Question2_FFT -stats=none {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FFT
+-- Compiling module Xgenerator
+-- Compiling module Ygenerator
+-- Compiling module Wngenerator
+** Warning: K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT.v(163): (vlog-2182) 'real1' might be read before written in always_comb or always @* block.
+
+** Warning: K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/FFT.v(162): (vlog-2182) 'imag1' might be read before written in always_comb or always @* block.
+
+
+Top level modules:
+	FFT
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial.v} {1 {vlog -work Question2_FFT -stats=none {K:/Kshitij Data/VerilogProjects/Homework4/Question2_FFT/complex_mult_trial.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module complexmulttrial
+
+Top level modules:
+	complexmulttrial
+
+} {} {}}

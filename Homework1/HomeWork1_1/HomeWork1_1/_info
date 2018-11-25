@@ -1,0 +1,97 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/Homework1/Question1new
+vcarrysave_3is2stage
+Z0 !s110 1517491981
+!i10b 1
+!s100 kdaUCcR@PJn=S1OgN1RO<0
+I5kO8fkG6A]Vj8iZjQk1dj0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_1
+Z3 w1517491976
+Z4 8K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_1/prob1_1.v
+Z5 FK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_1/prob1_1.v
+L0 14
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1517491981.000000
+Z8 !s107 K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_1/prob1_1.v|
+Z9 !s90 -reportprogress|300|-work|HomeWork1_1|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_1/prob1_1.v|
+!s101 -O0
+!i113 1
+Z10 o-work HomeWork1_1 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vFullAdder
+R0
+!i10b 1
+!s100 K9@Al70:[X>``=J2IIOL80
+IRHZ0bdP<@^z5lfS1iHebW3
+R1
+R2
+R3
+R4
+R5
+L0 39
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@full@adder
+vTop
+R0
+!i10b 1
+!s100 9Y1zK`QQj9]XO414Xmzk53
+IT^5jBI8ZzV:VD6aZjQPNG3
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@top
+vTop_tb
+!s110 1517491982
+!i10b 1
+!s100 jT`OCOMeP`7POgZHOlMOI0
+I>7aGRBkac`UCfe?FQ:aEo2
+R1
+R2
+w1517491973
+8K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_1/prob1_1_tb.v
+FK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_1/prob1_1_tb.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1517491982.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_1/prob1_1_tb.v|
+!s90 -reportprogress|300|-work|HomeWork1_1|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_1/prob1_1_tb.v|
+!s101 -O0
+!i113 1
+R10
+n@top_tb

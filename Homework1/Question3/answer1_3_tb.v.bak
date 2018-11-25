@@ -1,0 +1,45 @@
+
+module Top_tb;
+reg [3:0] inp1;
+reg [3:0] inp2;
+reg [3:0] inp3;
+reg [3:0] inp4;
+reg [3:0] inp5;
+reg [3:0] inp6;
+wire [5:0] answerp;
+Top Toptestbench (inp1 [3:0],inp2 [3:0],inp3 [3:0],inp4 [3:0],inp5 [3:0],inp6 [3:0],answerp [5:0]);
+
+initial 
+begin
+$monitor ($time, "inp1 = %b \t inp2 = %b \t inp3 = %b \t inp4 = %b \t inp5 = %b \t inp6 = %b \t answerp = %b \t",inp1[3:0],inp2[3:0],inp3[3:0],inp4[3:0],inp5[3:0],inp6[3:0],answerp[5:0]);
+#5;
+inp1[3:0] = 4'b0000;
+inp2[3:0] = 4'b0000;
+inp3[3:0] = 4'b0000;
+inp4[3:0] = 4'b0000;
+inp5[3:0] = 4'b0000;
+inp6[3:0] = 4'b0000;
+#100;
+inp1[3:0] = 4'b0111; //7
+inp2[3:0] = 4'b0000;
+inp3[3:0] = 4'b0000;
+inp4[3:0] = 4'b0000;
+inp5[3:0] = 4'b0000;
+inp6[3:0] = 4'b0000;
+#100;
+inp1[3:0] = 4'b0000;
+inp2[3:0] = 4'b1111;  //-1
+inp3[3:0] = 4'b0000;
+inp4[3:0] = 4'b0000;
+inp5[3:0] = 4'b0000;
+inp6[3:0] = 4'b0000;
+#100;
+inp1[3:0] = 4'b1001; //-7
+inp2[3:0] = 4'b1011; //-5
+inp3[3:0] = 4'b1011; //-5
+inp4[3:0] = 4'b1011; //-5
+inp5[3:0] = 4'b1011; //-5
+inp6[3:0] = 4'b1011; //-5
+#100;
+end
+endmodule

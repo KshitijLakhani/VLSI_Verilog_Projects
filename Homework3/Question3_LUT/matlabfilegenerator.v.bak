@@ -1,0 +1,37 @@
+module matlabgen1();
+
+reg [11:0] theta;
+reg clk;
+wire [15:0] real1;
+wire [15:0] imag1;
+
+integer i,f;
+
+Homework3_3_LUT_piby4 instant(clk,in_theta,real1,imag1);
+//conj3 instant(clk,theta,real1,imag1);
+
+initial begin
+clk=1'b1;
+forever begin
+# 5 clk=~clk;
+end
+end
+
+initial begin
+# 100;
+f=$fopen("Output3_2_try.m","w");
+$display("Beginning Simulation");
+
+theta=12'b000000000000;
+
+for(i=1;i<4096;i=i+1)
+begin
+#100;
+$fwrite(f,"theta(%d)=%d;re(%d)=%d;im(%d)=%d;\n",i,theta,i,$signed(real1),i,$signed(imag1));
+theta=theta+12'b000000000001;
+end
+
+$fclose(f);
+$finish;
+end
+endmodule

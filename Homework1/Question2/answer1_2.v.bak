@@ -1,0 +1,21 @@
+module carrysave_4is2 (
+input [4:0] inp,
+output c0,
+output c1,
+output sum
+);
+wire connection;
+FullAdder FA0 (inp[0],inp[1],inp[2],connection,c0);
+FullAdder FA1 (connection,inp[4],inp[3],sum,c1);
+endmodule
+
+module FullAdder(
+input in1,
+input in2,
+input cin,
+output sum,
+output cout
+);
+assign sum = (in1 ^ in2) ^ cin;
+assign cout = (in1 & in2) | (cin & (in1 ^ in2));
+endmodule

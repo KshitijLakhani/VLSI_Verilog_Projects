@@ -1,0 +1,16 @@
+{K:/Kshitij Data/VerilogProjects/Homework1/Question2/answer1_2_tb.v} {1 {vlog -work 4isto2carrysave -stats=none {K:/Kshitij Data/VerilogProjects/Homework1/Question2/answer1_2_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module carrysave_4is2_tb
+
+Top level modules:
+	carrysave_4is2_tb
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework1/Question2/answer1_2.v} {1 {vlog -work 4isto2carrysave -stats=none {K:/Kshitij Data/VerilogProjects/Homework1/Question2/answer1_2.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module carrysave_4is2
+-- Compiling module FullAdder
+
+Top level modules:
+	carrysave_4is2
+
+} {} {}}

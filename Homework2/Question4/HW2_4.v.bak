@@ -1,0 +1,116 @@
+/*module FSM(
+input clk,
+input reset,
+input skip,
+output reg [1:0] state,
+output reg [2:0] count,
+output reg shutter);
+
+parameter IDLE = 2'b00;
+parameter CAMERA_ON = 2'b01;
+parameter PROCESS = 2'b10;
+
+reg [1:0] state_c;
+reg [2:0] count_c;  //max count = 7 so 3 bit
+reg shutter_c;    //output
+
+always @(state or count or reset or skip) begin  // on every positive clock egde or reset or skip changes enter always block ! 
+//default
+state_c=state;
+count_c=count - 3'b001;               // Default down count by 1
+
+case(state)
+IDLE:
+begin
+shutter_c=1'b0;
+if (count == 3'b000)
+begin
+state_c=CAMERA_ON;
+count_c=3'b101;
+shutter_c=1'b1;
+end
+end
+CAMERA_ON:
+begin
+if(count == 3'b101)
+begin
+shutter_c=0;
+end
+if(count == 3'b100)
+begin
+shutter_c=0;
+end
+if(count == 3'b011)
+begin
+shutter_c=1;
+end
+if(count == 3'b010)
+begin
+shutter_c=0;
+end
+if(count == 3'b001)
+begin
+shutter_c=0;
+end
+if(count == 3'b000)
+begin
+state_c=PROCESS;
+count_c= 3'b100;
+end
+end
+PROCESS:
+begin
+if(skip == 1'b1)
+begin
+state_c=IDLE;
+count_c=3'b010;    // set to 2 so that it counts for 3 cycles
+shutter_c=1'b0;
+end
+if(count_c == 3'b000)
+begin
+state_c=IDLE;
+count_c=3'b010;     
+shutter_c=1'b0;
+end
+end
+default:
+begin
+state_c=2'bxx;
+count_c=3'bxxx;
+shutter_c=1'bx;
+end
+endcase
+
+if(reset==1'b1)
+begin
+state_c=IDLE;
+count_c=3'b010; 
+shutter_c=1'b0;
+end
+end
+
+always @ (posedge clk)
+begin
+state <= #1 state_c;
+count <= #1 count_c;
+shutter <= #1 shutter_c;
+end
+endmodule*/
+
+
+module test;
+   initial begin
+      reg[15:0]a;
+      reg [15:0] b;
+
+      integer    seed,i,j;
+      for (i=0; i<6; i=i+1)
+        begin
+           a=$urandom%10; 
+           #100;
+           b=$urandom%20;
+           $display("A %d, B: %d",a,b);    
+        end 
+      $finish;
+   end
+endmodule

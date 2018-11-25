@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_1
+vfloat2fixed
+!s110 1517494057
+!i10b 1
+!s100 fK_z`4Mn?f>YLKn>SdaIc2
+IUNgjJkB`dAmzb3mFH@i832
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_2
+w1517492699
+8K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_2/prob1_2.v
+FK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_2/prob1_2.v
+L0 1
+Z2 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1517494057.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_2/prob1_2.v|
+!s90 -reportprogress|300|-work|HomeWork1_2|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_2/prob1_2.v|
+!s101 -O0
+!i113 1
+Z3 o-work HomeWork1_2 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vfloat2fixed_tb
+!s110 1517494058
+!i10b 1
+!s100 BMKjM;L0ZlOFK<eE7kB>a0
+Ile<Wdlj`F9g[j=:J^O25Y2
+R0
+R1
+w1517494052
+8K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_2/prob1_2_tb.v
+FK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_2/prob1_2_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1517494058.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_2/prob1_2_tb.v|
+!s90 -reportprogress|300|-work|HomeWork1_2|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_2/prob1_2_tb.v|
+!s101 -O0
+!i113 1
+R3

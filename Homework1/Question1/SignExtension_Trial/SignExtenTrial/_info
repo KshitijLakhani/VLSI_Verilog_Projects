@@ -1,0 +1,53 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/Homework1/Question1
+vsignextend
+!s110 1517254820
+!i10b 1
+!s100 o1GWTkhX7gnGUdES=]Ncn3
+IJO8K23d2Pmo>Nn9eNTo]70
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dK:/Kshitij Data/VerilogProjects/Homework1/Question1/SignExtension_Trial
+w1517254421
+8K:/Kshitij Data/VerilogProjects/Homework1/Question1/SignExtension_Trial/SignExtmain.v
+FK:/Kshitij Data/VerilogProjects/Homework1/Question1/SignExtension_Trial/SignExtmain.v
+L0 1
+Z2 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1517254820.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework1/Question1/SignExtension_Trial/SignExtmain.v|
+!s90 -reportprogress|300|-work|SignExtenTrial|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/Question1/SignExtension_Trial/SignExtmain.v|
+!s101 -O0
+!i113 1
+Z3 o-work SignExtenTrial -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vsignextendTB
+!s110 1517254821
+!i10b 1
+!s100 SWGXlK=iJ4FnWPjEB4FL<1
+I1iA>Ec?J_7Jj[SfL1K^3c3
+R0
+R1
+w1517254816
+8K:/Kshitij Data/VerilogProjects/Homework1/Question1/SignExtension_Trial/SignExtTB.v
+FK:/Kshitij Data/VerilogProjects/Homework1/Question1/SignExtension_Trial/SignExtTB.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1517254821.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework1/Question1/SignExtension_Trial/SignExtTB.v|
+!s90 -reportprogress|300|-work|SignExtenTrial|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/Question1/SignExtension_Trial/SignExtTB.v|
+!s101 -O0
+!i113 1
+R3
+nsignextend@t@b

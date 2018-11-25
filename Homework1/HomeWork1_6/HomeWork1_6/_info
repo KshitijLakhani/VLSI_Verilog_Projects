@@ -1,0 +1,160 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_5
+vcarrysave_4is2
+Z0 !s110 1517497254
+!i10b 1
+!s100 b6M=On3hYSfPdDH4:1hDd2
+IkFF^>3VAzJRCM;A]INlGO0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_6
+Z3 w1517497249
+Z4 8K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_6/prob1_6.v
+Z5 FK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_6/prob1_6.v
+L0 71
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1517497254.000000
+Z8 !s107 K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_6/prob1_6.v|
+Z9 !s90 -reportprogress|300|-work|HomeWork1_6|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_6/prob1_6.v|
+!s101 -O0
+!i113 1
+Z10 o-work HomeWork1_6 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vFullAdder
+R0
+!i10b 1
+!s100 EfMmH]l]BNTEI<SDzbjfP3
+IGkH]QNh7g5_7GcngG;XgK0
+R1
+R2
+R3
+R4
+R5
+L0 82
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@full@adder
+vstage1_3is2
+R0
+!i10b 1
+!s100 <zzi<5Jb41kKG?=z6_`CZ2
+Il20d4LMU_Dzd>@Ug:W?eO2
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vstage2_3is2
+R0
+!i10b 1
+!s100 M?jeAS@bNI04n`b1k9T8f1
+IK86MBSR7dfZI4]Xb7eSHb1
+R1
+R2
+R3
+R4
+R5
+L0 16
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vstage3_4is2
+R0
+!i10b 1
+!s100 ;`ln?lzOV`3H`JCSiS`z71
+I]:nb;^7?^S4Yf>F`HZSb80
+R1
+R2
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vTop
+R0
+!i10b 1
+!s100 6>^A>0XjZoPVK:gL2o]Zz2
+IU[X<a<189O[ePNzB>a8N:3
+R1
+R2
+R3
+R4
+R5
+L0 49
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@top
+vTop_tb
+!s110 1517497255
+!i10b 1
+!s100 hZ:nRMdXGIFbJ>cK9meOg0
+IVgh_;f<98D0FKDhY?JAlH1
+R1
+R2
+w1517497244
+8K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_6/prob1_6_tb.v
+FK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_6/prob1_6_tb.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1517497255.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_6/prob1_6_tb.v|
+!s90 -reportprogress|300|-work|HomeWork1_6|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_6/prob1_6_tb.v|
+!s101 -O0
+!i113 1
+R10
+n@top_tb

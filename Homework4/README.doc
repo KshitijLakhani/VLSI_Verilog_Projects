@@ -1,0 +1,88 @@
+Website Link for HW 4 - 
+
+
+http://web.ece.ucdavis.edu/~bbaas/281/hwk/4/
+
+
+
+1. [55 pts] Design of an area-efficient low-pass FIR filter. The filter must meet the following specifications when its sample rate is 100 MHz.
+o Passband below 8.0 MHz: no more than 3dB ripple from minimum to maximum levels
+o Passband below 12.0 MHz: no more than 4dB attenuation below gain level at DC
+o Stopband above 16.0 MHz: at least 25dB attenuation below gain level at DC
+o Stopband above 19.0 MHz: at least 28dB attenuation below gain level at DC
+a) [10 pts] Write a matlab function lpfirstats(H) that takes a frequency response vector H (or a vector of filter coefficients) as an input and returns the four critical values listed above (passband ripple, etc.).
+b) [10 pts] Write matlab code which repeatedly calls lpfirstats(H) and finds the smallest area filter. There is no need to write a sophisticated optimization algorithm, just something reasonable that does more than simple coefficient scaling. For example, making small perturbations to the frequency and amplitude values that remez() uses such as using 0.01 and other small values instead of 0.00 in the stopband.
+It may be helpful to use the following matlab code. Remember that matlab vectors start at index=1 so H(1) is the magnitude at frequency=0.
+       coeffs1   = remez(numtaps-1, freqs, amps);
+       coeffs2   = coeffs1*scale;
+       coeffs    = round(coeffs2);
+       [H,W]     = freqz(coeffs);
+       H_norm    = abs(H) ./ abs(H(1));
+       [ripple, minpass, maxstoplo, maxstophi] = lpfirstats(H_norm); 
+Assume area is: Total_num_partial_products + 2*Num_filter_taps
+As an example from a previous year of the difference between a good optimization and a weaker one, these are class results for ten students for a different filter than the one assigned here:
+       109 area, 31 taps,  47 PPs
+       109 area, 31 taps,  47 PPs
+       113 area, 33 taps,  47 PPs
+       114 area, 33 taps,  48 PPs
+       123 area, 33 taps,  57 PPs
+       128 area, 34 taps,  60 PPs
+       182 area, 55 taps,  72 PPs
+       221 area, 59 taps, 103 PPs
+       221 area, 59 taps, 103 PPs
+       250 area, 61 taps, 128 PPs
+       
+c) Provide the following for your smallest-area filter in your paper submission.
+i) [5 pts] Filter coefficients
+ii) [10 pts] The number of taps, number of required partial products, area estimate, and the attained values for the four filter criteria in dB.
+iii) [10 pts] A plot made by: plot_one_lpfir.m (that requires updating) to show the correct filter specifications.
+iv) [5 pts] A stem() plot of the filter's coefficients.
+d) Provide the following for your smallest-area filter in your electronic submission.
+i) [5 pts] Filter coefficients in a matlab-readable vector in a file coeff.m (e.g., c = [-5 2 14 ...]).
+
+
+2. [150 pts] Design a block which calculates the complex radix-2 DIF FFT butterfly. Use your complex exponential generator from hwk/proj 3, problem 3, design 2 to generate WN values.
+3.   X =  A + B
+4.   Y = (A - B) * W
+The latency may be as many cycles as needed however the WN block and the multipliers must be the only logic inside their own pipeline stages.
+The block's I/O signals are described below. Recall that since there is no decimal point in the hardware, you may think of the inputs as being in any x.x format you like. Having done that, the decimal point of the output will be fixed and you will need to take that into consideration when comparing in matlab.
+o clk input
+o wn_exp input
+12-bit fixed-point unsigned
+This is the input into the WN generator.
+o A input
+16-bit fixed-point signed 2's complement complex (a_r, a_i)
+o B input
+16-bit fixed-point signed 2's complement complex (b_r, b_i)
+o X output
+16-bit fixed-point signed 2's complement complex (x_r, x_i)
+o Y output
+16-bit fixed-point signed 2's complement complex (y_r, y_i)
+Design and write verilog for the block.
+o With outputs scaled with maximum precision but also so they never overflow, underflow, or saturate.
+o Appropriately pipelined so corresponding X and Y outputs are output at the same time.
+o Use 16-bit × 17-bit multipliers.
+o Use +, –, and * for arithmetic operations.
+The test procedure is as follows:
+11. Generate test cases in your verilog testbench:
+1) A minimum of 20 hand-picked extreme case inputs (e.g., max pos and max neg inputs)
+2) A minimum of 1000 random inputs using $random (which returns a 32-bit number each time it is called). Use $random(seed) once at the beginning of your test to set the random number generator's seed to some arbitrary value so tests can be repeated for debugging. 
+12. Output both the a) inputs and b) verilog output to a plain text matlab-readable *.m file. For example, a file such as: 
+wn_exp(0+1) = 0; a_r(1) = -643; a_i(1) = 0; ... % index 1 = angle 0 unfortunately since matlab can not have index = 0
+wn_exp(1+1) = 1; a_r(2) = 123; a_i(2) = -6; ...
+wn_exp(2+1) = 2; a_r(3) = 000; a_i(3) = -243; ...
+where values can be printed out and then re-scaled in matlab however it is most convenient. Another possible format is: 
+wn_exp(0+1) = 0; a(0+1) = -643 + j * 0; ... % index 1 = angle 0 unfortunately since matlab can not have index = 0
+wn_exp(1+1) = 1; a(1+1) = 123 + j * 6; ...
+wn_exp(2+1) = 2; a(2+1) = 0 + j * 12; ...
+Suggestion: print integers in verilog. Use "signed" reg's only for the printf statement.
+13. Compare a) verilog output and b) matlab calculation of the butterfly equations using difff.m in matlab. Do not scale the matlab equations from how they are written above, but you may scale your verilog output by any power-of-2—which is the same as selecting the location of the decimal point.
+Submit the following. When submitting the verilog file of your lookup tables, print only the first ~15 lines and the last ~15 lines and insert the comment "<Many lines removed>" for lines you deleted.
+a) [30 pts] Detailed pipelined block diagram with all functional details.
+b) [60 pts] Accuracy points for smallest error compared to matlab: 60pts: within 1 bit, 50pts: within 2 bits, 30pts: within 3 bits 
+Write the Energy_diff/Energy_data0 value in dB in your report and also submit the four plots and printout produced by difff.m.
+c) [60 pts] Synthesize your design at the following 3 cycle time values and report the 1) achieved cycle time (clock frequency) and 2) area for each:
+1. a very long cycle time, e.g., 1 ms = 1 KHz, to find the minimum area;
+2. a very short cycle time, e.g., 0.1 ns = 10 GHz, to find the minimum cycle time;
+3. the cycle time achieved in the synthesis run for case (2) multiplied times 1.5
+

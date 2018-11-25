@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/Boom
+vHA
+Z0 !s110 1517170982
+!i10b 1
+!s100 RWz6gLgmgn1S3:R@hldE61
+I^BNbDGC:e2_e;5U2?mNDf3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dK:/Kshitij Data/VerilogProjects/RippleFullAdder
+Z3 w1517170871
+Z4 8K:/Kshitij Data/VerilogProjects/RippleFullAdder/RippleFA_main.v
+Z5 FK:/Kshitij Data/VerilogProjects/RippleFullAdder/RippleFA_main.v
+L0 9
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1517170982.000000
+Z8 !s107 K:/Kshitij Data/VerilogProjects/RippleFullAdder/RippleFA_main.v|
+Z9 !s90 -reportprogress|300|-work|RippleFullAdd|-stats=none|K:/Kshitij Data/VerilogProjects/RippleFullAdder/RippleFA_main.v|
+!s101 -O0
+!i113 1
+Z10 o-work RippleFullAdd -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@h@a
+vRippleFA
+R0
+!i10b 1
+!s100 JPGO:GM[@<j1IofYH=:kE1
+I9e_RhDH2f5IHYJfP[WKd?2
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+n@ripple@f@a
+vtestbenchFA
+!s110 1517170983
+!i10b 1
+!s100 9aS;l8mkQQ]ccMka`3e1W3
+IPXhf=knK7NaJhFR5::mzG2
+R1
+R2
+w1517170977
+8K:/Kshitij Data/VerilogProjects/RippleFullAdder/RippleFA_testbench.v
+FK:/Kshitij Data/VerilogProjects/RippleFullAdder/RippleFA_testbench.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1517170983.000000
+!s107 K:/Kshitij Data/VerilogProjects/RippleFullAdder/RippleFA_testbench.v|
+!s90 -reportprogress|300|-work|RippleFullAdd|-stats=none|K:/Kshitij Data/VerilogProjects/RippleFullAdder/RippleFA_testbench.v|
+!s101 -O0
+!i113 1
+R10
+ntestbench@f@a

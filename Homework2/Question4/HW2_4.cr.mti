@@ -1,0 +1,15 @@
+{K:/Kshitij Data/VerilogProjects/Homework2/Question4/HW2_4.v} {1 {vlog -work Question4 -stats=none {K:/Kshitij Data/VerilogProjects/Homework2/Question4/HW2_4.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FSM
+
+Top level modules:
+	FSM
+
+} {} {}} {K:/Kshitij Data/VerilogProjects/Homework2/Question4/HW2_4_tb.v} {1 {vlog -work Question4 -stats=none {K:/Kshitij Data/VerilogProjects/Homework2/Question4/HW2_4_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FSM_testbench
+
+Top level modules:
+	FSM_testbench
+
+} {} {}}

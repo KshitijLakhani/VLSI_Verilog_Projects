@@ -1,0 +1,16 @@
+module carrysave_4is2_tb;
+reg [4:0] in;
+wire c0,c1,sum;
+carrysave_4is2 carrysave_tb(in[4:0],c0,c1,sum);
+initial
+begin
+$monitor($time,"input is %b \t c0 is %b \t c1 is %b \t sum is %b \n",in[4:0],c0,c1,sum);
+#10;
+in[4:0] = 10110;
+#10
+in[4:0] = 00000;
+#10;
+in[4:0] = 11111;
+#10;
+end
+endmodule

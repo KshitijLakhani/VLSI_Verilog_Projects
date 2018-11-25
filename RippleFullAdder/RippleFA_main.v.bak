@@ -1,0 +1,15 @@
+module RippleFA (a,b,cin,sum,cout);
+input a,b,cin;
+output sum,cout;
+HA HalfAdder1(b,cin,sum1,carry1);
+HA HalfAdder2(a,sum1,sum,carry2);
+cout == carry1 | carry2;
+endmodule
+
+module HA (in1,in2,sum,carry);
+input in1,in2;
+output sum,carry;
+sum == in1 ^ in2;
+carry == in1 & in2;
+endmodule
+

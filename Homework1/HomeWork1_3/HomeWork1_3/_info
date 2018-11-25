@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_2
+vfixedtofloating
+!s110 1517495742
+!i10b 1
+!s100 WbPzGn82Z`<Ibo]]b:3QX0
+IAUNhUM0=AafNbZl_Q6V6;3
+VDg1SIo80bB@j0V0VzS_@n1
+dK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_3
+w1517495734
+8K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_3/prob1_3_main&testbenc.v
+FK:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_3/prob1_3_main&testbenc.v
+L0 1
+OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1517495742.000000
+!s107 K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_3/prob1_3_main&testbenc.v|
+!s90 -reportprogress|300|-work|HomeWork1_3|-stats=none|K:/Kshitij Data/VerilogProjects/Homework1/HomeWork1_3/prob1_3_main&testbenc.v|
+!s101 -O0
+!i113 1
+o-work HomeWork1_3 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
